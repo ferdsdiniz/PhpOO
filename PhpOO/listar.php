@@ -48,9 +48,11 @@
                         <button class="btn btn-warning btn-sm">
                             Editar
                         </button>
-                        <button class="btn btn-danger btn-sm">
-                            Excluir
-                        </button>
+                            <a href="control/UsuarioController.php?del=<?= $usuario->getId()?>">
+                            <button class="btn btn-danger btn-sm">
+                                Excluir
+                            </button>
+                        </a>
                     </td>
                     </tr>
                     <?php endforeach?>
